@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
 
 :root {
+  --gradient:linear-gradient(90deg,var(--purple),var(--pink));
+  --purple: #9795EF;
+  --pink: #F9C5D1;
   --background: #FFF9FA;
   --light-text: #9A9A9A;
   --light-white: #ffffff;
@@ -22,14 +25,32 @@
 /*header section starts*/
 
 .header {
-   top: 0; 
-   left: 0; right: 0;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   padding: 2rem 9%;
-   background: #FFF9FA;
-   z-index: 1000;
+ top: 0;
+ left: 0; right: 0;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 2rem 9%;
+ background: var(--background);
+ z-index: 1000;
+ box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+  color: transparent;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+
+.header .navbar a {
+  color: var(--purple);
+  font-size: 1.2rem;
+  
+
 }
 
 /*header section ends*/
+
