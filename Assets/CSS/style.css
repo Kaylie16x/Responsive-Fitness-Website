@@ -8,20 +8,38 @@
   --light-text: #9A9A9A;
   --light-white: #ffffff;
   --border-radius: .5rem;
-  --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1) 
+  --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1); 
 }
 
 * {
   font-family: 'Oswald', sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 0;padding: 0;
   box-sizing: border-box;
-  outline: none;
-  border: none;
+  outline: none; border: none;
+  text-transform: capitalize;
   text-decoration: none;
   transition: .3s linear all;
 }
 
+html {
+  font-size: 65.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+  overflow-x: hidden; 
+}
+
+::-webkit-scrollbar{
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+  background: var(--light);
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: var(--gradient);
+   border-radius: var(--border-radius);
+}
 /*header section starts*/
 
 .header {
@@ -34,6 +52,7 @@
  background: var(--background);
  z-index: 1000;
  box-shadow: var(--box-shadow);
+ position: fixed;
 }
 
 .header .logo {
@@ -41,16 +60,77 @@
   background: var(--gradient);
   background-clip: text;
   -webkit-background-clip: text;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: bolder;
 }
 
 .header .navbar a {
   color: var(--purple);
-  font-size: 1.2rem;
-  
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1.5rem;
+}
 
+#menu-btn {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--light-white);
+  background: var(--gradient);
+  padding: 1rem 1.3rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
 }
 
 /*header section ends*/
 
+
+
+
+
+
+
+
+
+
+/*media queries*/
+
+@media(max-width: 991px){
+
+   html {
+    font-size: 65%;
+   }
+
+}
+
+@media(max-width: 768px){
+  
+  #menu-btn {
+    display: initial;
+  }
+
+  .header .navbar{
+    position: absolute;
+    top: 99%;
+    left: 0; right: 0;
+    background: var(--light-white);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .navbar a {
+    font-size: 1.5rem;
+    display: block;
+    margin: 2.5rem 2rem;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+  }
+
+  .header .navbar a:hover {
+    color: var(--light-white);
+    background: var(--gradient);
+  }
+}
