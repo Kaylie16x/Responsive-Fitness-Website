@@ -12,6 +12,10 @@
   --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1); 
 }
 
+section {
+  padding: 2rem 9%;
+}
+
 body {
   background: var(--body-background);
 }
@@ -45,6 +49,17 @@ html {
    background-color: var(--gradient);
    border-radius: var(--border-radius);
 }
+
+.btn{
+  color: var(--light-white);
+  font-size: 1.5rem;
+  background: var(--gradient);
+  border-radius: var(--border-radius);
+  padding: .8rem 3rem;
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+
 /*header section starts*/
 
 .header {
@@ -91,6 +106,36 @@ html {
 
 /*home section starts*/
 
+.Home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 8%;
+  background: var(--background);
+}
+
+.Home .content, .Home .image {
+  flex: 1 1 45rem;
+}
+
+.Home .image img {
+  width: 100%;
+}
+
+.Home .content h3 {
+  font-size: 3.5rem;
+  color: transparent;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  padding: 1rem 0;
+}
+
+.Home .content p {
+  color: var(--light-text);
+  font-size: 2rem;
+}
 
 /*home section ends*/
 
@@ -142,6 +187,18 @@ html {
   .header .navbar a:hover {
     color: var(--light-white);
     background: var(--gradient);
+  }
+
+  .Home .content {
+    margin-top: 8rem;
+  }
+
+  .Home .content h3 {
+    font-size: 3rem;
+  }
+  
+  .Home .content p {
+    font-size: 1.8rem;
   }
 }
 
