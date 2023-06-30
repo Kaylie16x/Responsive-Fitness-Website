@@ -54,7 +54,7 @@ html {
   color: var(--light-white);
   font-size: 1.5rem;
   background: var(--gradient);
-  border-radius: var(--border-radius);
+  border-radius: 8rem;
   padding: .8rem 3rem;
   margin-top: 1.5rem;
   display: inline-block;
