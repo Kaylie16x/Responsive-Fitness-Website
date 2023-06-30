@@ -5,10 +5,15 @@
   --purple: #9795EF;
   --pink: #F9C5D1;
   --background: #FFF9FA;
+  --body-background: #FAF4F4;
   --light-text: #9A9A9A;
   --light-white: #ffffff;
   --border-radius: .5rem;
   --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1); 
+}
+
+body {
+  background: var(--body-background);
 }
 
 * {
@@ -84,6 +89,11 @@ html {
 
 /*header section ends*/
 
+/*home section starts*/
+
+
+/*home section ends*/
+
 
 
 
@@ -133,4 +143,12 @@ html {
     color: var(--light-white);
     background: var(--gradient);
   }
+}
+
+@media(max-width: 450px){
+
+  html {
+    font-size: 55%;
+  }
+
 }
