@@ -5,7 +5,7 @@
   --purple: #9795EF;
   --pink: #F9C5D1;
   --background: #FFF9FA;
-  --body-background: #FAF4F4;
+  --body-background: #ffffff;
   --light-text: #9A9A9A;
   --light-white: #ffffff;
   --border-radius: .5rem;
@@ -69,7 +69,7 @@ html {
  align-items: center;
  justify-content: space-between;
  padding: 2rem 9%;
- background: var(--background);
+ background: var(--body-background);
  z-index: 1000;
  box-shadow: var(--box-shadow);
  position: fixed;
@@ -194,21 +194,24 @@ html {
 }
 
 .Features .image img {
-  width: 78%;
+  width: 76%;
+  margin-left: 2rem;
 }
 
-.Features .content span {
+.Features .content h2 {
   color: var(--purple);
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bolder;
+  padding: 1rem;
 }
 
 .Features .content .title{
   color: var(--light-white);
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   background: var(--gradient);
   width: 33rem;
   margin-top: .5rem;  
+  padding: 1rem 2rem;
 }
 
 .Features .content .box-container{
@@ -220,9 +223,13 @@ html {
 
 .Features .content .box-container .box {
    flex: 1 1 20rem;
+   padding: 1rem 0;
 }
 
 .Features .content .box-container .box h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: transparent;
   font-size: 1.5rem;
   background: var(--gradient);
@@ -230,20 +237,43 @@ html {
   -webkit-background-clip: text;
 }
 
-.Features .content .box-container .box i{
-  width: 4rem;
-  height: 4rem;
-  line-height: 4rem;
-  color: var(--purple);
+.Features .content .box-container .box p{
+  color: var(--light-text);
   font-size: 1.5rem;
-  border-radius: 50%;
-  background: var(--pink);
-  padding-right: 1.5rem;
-
+  font-weight: regular;
+  text-transform: none;
 }
 
 
+.Features .content .box-container .box span{
+  margin: 2rem .5rem;
+}
+
+
+.Features .content .box-container .box span i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4.5rem;
+  line-height: 4rem;
+  font-size: 2.5rem;
+  color: var(--purple);
+  border-radius: 50%;
+  background: #F3F2FF;
+  margin-left: 0 1.5rem;
+}
+
 /*features section ends*/
+
+/*classes section starts*/
+
+
+
+/*classes section ends*/
+
+
+
 
 
 
@@ -259,6 +289,10 @@ html {
 
    html {
     font-size: 65%;
+   }
+
+   section{
+    padding: 2rem;
    }
 
 }
