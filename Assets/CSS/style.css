@@ -196,6 +196,8 @@ html {
 .Features .image img {
   width: 76%;
   margin-left: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: var(--box-shadow);
 }
 
 .Features .content h2 {
@@ -239,9 +241,10 @@ html {
 
 .Features .content .box-container .box p{
   color: var(--light-text);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: regular;
   text-transform: none;
+  padding: 0 1.5;
 }
 
 
@@ -254,7 +257,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 4rem;
+  width: 5rem;
   height: 4.5rem;
   line-height: 4rem;
   font-size: 2.5rem;
@@ -264,9 +267,15 @@ html {
   margin-left: 0 1.5rem;
 }
 
+.Features .content .box-container .box span i:hover{
+  color: var(--light-white);
+  background:  var(--purple);
+}
+
 /*features section ends*/
 
 /*classes section starts*/
+
 
 
 
