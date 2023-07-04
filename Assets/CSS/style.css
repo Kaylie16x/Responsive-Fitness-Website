@@ -431,9 +431,110 @@ text-align: center;
   cursor: pointer;
 }
 
+/*pricing section ends*/
+
+/*blog section starts*/
+
+.Blogs .content {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.Blogs .content h2 {
+  color: transparent;
+  font-size: 2.5rem;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.Blogs .content h3 {
+  color: var(--light-white);
+  font-size: 3rem;
+  background: var(--gradient);  padding: 1rem 1.2rem;
+  text-align: center;
+  display: inline-block;
+  padding: .8rem 3rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+
+.Blogs .content h4 {
+  color: var(--light-text);
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+.Blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+  gap: 1.5rem;
+}
+
+.Blogs .box-container .box {
+  flex: 1 1 24rem;
+  background: linear-gradient(white, white) padding-box,
+  linear-gradient(180deg, var(--pink), var(--purple)) border-box;
+  border-radius: 1rem;
+  border: 4px solid transparent;
+  padding: 2rem 0;
+}
+
+.Blogs .box-container .box span {
+  color: var(--purple);
+  background: linear-gradient(white, white) padding-box,
+  linear-gradient(180deg, var(--pink), var(--purple)) border-box;
+  font-size: 1.8rem;
+  border-radius: 1rem;
+  border: 3px solid transparent;
+  padding: .8rem 2rem;
+  margin: 1rem;
+}
+
+.Blogs .box-container .box h3 {
+  color: var(--purple);
+  font-size: 1.6rem;
+  padding: 2rem 1rem;
+}
+
+.Blogs .box-container .box p {
+  color: var(--light-text);
+  font-size: 1.8rem;
+  padding: 1.5rem 1rem;
+  text-transform: none;
+}
+
+.Blogs .box-container .box .button {
+  color: var(--light-white);
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-radius: 1rem;
+  background: var(--gradient);
+  margin: 1rem;
+  padding: .8rem 3rem;
+  display: inline-block;
+}
+
+/*blog section ends*/
+
+/*subscribe section starts*/
+
+.Subscribe {
+  padding: 3rem;
+}
+
+.Subscribe .box {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+}
 
 
-/*pricing section*/
+
+/*subscribe section ends*/
 
 
 
