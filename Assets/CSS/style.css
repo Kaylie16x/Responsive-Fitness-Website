@@ -118,9 +118,16 @@ html {
 
 .header .navbar a {
   color: var(--purple);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 400;
   margin: 1.5rem;
+}
+
+.header .navbar a:hover {
+ color: transparent;
+ background: var(--gradient);
+ background-clip: text;
+ -webkit-background-clip: text;
 }
 
 #menu-btn {
@@ -531,6 +538,12 @@ text-align: center;
   text-align: center;
   border-radius: 1rem;
 }
+
+.Subscribe .box .btn {
+  border-radius: .5rem;
+  padding: .8rem 3rem;
+}
+
 
 
 
