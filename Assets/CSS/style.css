@@ -112,15 +112,22 @@ html {
   background: var(--gradient);
   background-clip: text;
   -webkit-background-clip: text;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bolder;
 }
 
 .header .navbar a {
   color: var(--purple);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 400;
   margin: 1.5rem;
+}
+
+.header .navbar a:hover {
+  color: transparent;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 #menu-btn {
@@ -522,7 +529,8 @@ text-align: center;
 /*subscribe section starts*/
 
 .Subscribe {
-  padding: 3rem;
+  padding: 5rem;
+  background: var(--background);
 }
 
 .Subscribe .box {
@@ -530,7 +538,49 @@ text-align: center;
   padding: 2rem;
   text-align: center;
   border-radius: 1rem;
+  background: var(--gradient);
 }
+
+.Subscribe .box h1 {
+  color: var(--light-white);
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.Subscribe .box p {
+  color: var(--light-white);
+  font-size: 1.8rem;
+  font-weight: 200;
+  padding: 1rem 0;
+  margin: 1rem 8.5rem;
+  text-transform: none;
+}
+
+.Subscribe .box form {
+  background: #eee;
+  width: 60%;
+  margin: 2rem auto;
+  padding: .5rem 0;
+  height: 5rem;
+  border-radius: 5rem;
+}
+
+.Subscribe .box form input[type="email"]{
+  width: 71%;
+  color: var(--light-text);
+  background: none;
+  padding: .5rem;
+  font-size: 1.5rem; 
+}
+
+.Subscribe .box form .btn {
+  height: 90%;
+  width: 26%;
+  border-radius: 5rem;
+  margin: .1rem 0;
+  cursor: pointer;
+}
+
 
 
 
@@ -604,6 +654,10 @@ text-align: center;
   
   .Home .content p {
     font-size: 1.8rem;
+  }
+
+  .Subscribe .box form{
+    width: 100%;
   }
 }
 
