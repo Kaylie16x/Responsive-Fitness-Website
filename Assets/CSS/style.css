@@ -46,7 +46,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-   background-color: var(--gradient);
+   background: var(--gradient);
    border-radius: var(--border-radius);
 }
 
@@ -547,13 +547,13 @@ text-align: center;
 
 .Subscribe .box h1 {
   color: var(--light-white);
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 1rem 0;
 }
 
 .Subscribe .box p {
   color: var(--light-white);
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 200;
   padding: 1rem 0;
   margin: 1rem 8.5rem;
@@ -586,9 +586,40 @@ text-align: center;
 
 }
 
-
-
 /*subscribe section ends*/
+
+/*footer section starts*/
+
+.Footer {
+  background: var(--gradient);
+}
+
+.Footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+  gap: 1.5rem;
+}
+
+.Footer .box-container .box .logo {
+  color: var(--light-white);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.Footer .box-container .box p {
+  color: var(--light-white);
+  font-size: 1.5rem;
+}
+
+
+.Footer .box-container .box h3 {
+  color: var(--light-white);
+  font-size: 1.8rem;
+}
+
+
+
+/*footer section ends*/
 
 
 
